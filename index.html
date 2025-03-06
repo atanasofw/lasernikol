@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eстетичен лазерен център NIKOL</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <img src="logo.jpg" alt="Лазерен център Никол" class="logo-image">
+                </div>
+                <div class="center-name">
+                    ЕСТЕТИЧЕН ЛАЗЕРЕН ЦЕНТЪР NIKOL
+                    <!-- Добавяне на кошничката до името -->
+                    <div class="cart">
+                        <img src="cart.png" alt="Кошница" class="cart-icon">
+                        <span id="cart-count">0</span>
+                    </div>
+                </div>
+                <div class="right-section">
+                    <div class="social-icons">
+                        <a href="#" id="phone-icon"><img src="phone.png" alt="Телефон" class="social-icon"></a>
+                        <a href="https://www.facebook.com" target="_blank"><img src="facebook.png" alt="Facebook" class="social-icon"></a>
+                        <a href="https://www.instagram.com" target="_blank"><img src="instagram.png" alt="Instagram" class="social-icon"></a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <img src="image.jpg" alt="Лазерен център Никол" class="hero-image">
+        <div class="hero-buttons">
+            <!-- Бутон "Запази час" долу вдясно -->
+            <a href="#" class="book-appointment-button">Запази час</a>
+            <!-- Бутон "Услуги" долу вляво -->
+            <a href="#" class="services-button">Услуги</a>
+        </div>
+    </section>
+
+    <section class="info">
+        <div class="container">
+            <div class="info-content">
+                <img src="elysion-pro.jpg" alt="Лазерна епилация" class="info-image">
+                <div class="info-text">
+                    <h2>Най-ефективната лазерна епилация</h2>
+                    <p>Подарете си здрава и гладка кожа</p>
+                    <p>Забравете за досадните косъмчета за период от 5 до 10 години!</p>
+                    <p>Край на врастналите и болезнени косъмчета!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="additional-info">
+        <div class="container">
+            <div class="additional-info-content">
+                <div class="additional-info-text">
+                    <h2>Най-добрата лазерна епилация в гр. Ямбол</h2>
+                    <p>.</p>
+                </div>
+                <img src="additional-image.jpg" alt="Допълнителна информация" class="additional-info-image">
+            </div>
+        </div>
+    </section>
+
+    <section class="extra-info">
+        <div class="container">
+            <div class="extra-info-content">
+                <img src="new-image.jpg" alt="Допълнителна информация" class="extra-info-image">
+                <div class="extra-info-text">
+                    <h2>Друга информация</h2>
+                    <p>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Лазерен център Никол. Всички права запазени.</p>
+        </div>
+    </footer>
+
+    <div id="phone-number-popup" class="popup">
+        <span id="close-popup">&times;</span>
+        <p>Телефонен номер: <strong>+123456789</strong></p>
+    </div>
+
+    <!-- Модал за кошницата -->
+    <div id="cart-popup" class="popup">
+        <span id="close-cart">&times;</span>
+        <h2>Вашата кошница</h2>
+        <div id="cart-items">
+            <!-- Продуктите ще бъдат динамично добавяни тук -->
+        </div>
+        <button id="checkout-button">Поръчай</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,262 @@
+/* Импортираме шрифта от локалния файл */
+@font-face {
+    font-family: 'LXGW WenKai Mono TC';
+    src: url('fonts/lxgwwenkaimono.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #fff;
+    color: #bb67e2;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    max-width: 200px;
+    height: auto;
+}
+
+.center-name {
+    font-size: 40px;
+    font-family: 'LXGW WenKai Mono TC', sans-serif;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Центрираме името хоризонтално */
+    position: relative; /* За да може кошничката да се позиционира спрямо този контейнер */
+    flex: 1; /* Името заема максимално пространство, за да остане центрирано */
+}
+
+.cart {
+    position: absolute;
+    right: 0; /* Позиционираме кошничката в десния край на контейнера */
+    display: flex;
+    align-items: center;
+}
+
+.cart-icon {
+    width: 40px;
+    height: 40px;
+}
+
+#cart-count {
+    position: relative;
+    top: -10px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+}
+
+.hero-buttons {
+    position: relative;
+}
+
+.book-appointment-button, .services-button {
+    background-color: #bb67e2;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    display: inline-block;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    position: absolute;
+}
+
+.book-appointment-button:hover, .services-button:hover {
+    background-color: #ff6600;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.book-appointment-button {
+    bottom: 20px;
+    right: 20px;
+}
+
+.services-button {
+    bottom: 20px;
+    left: 20px;
+}
+
+.hero {
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.hero-image {
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+    display: block;
+    margin: 0;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    padding: 50px 0;
+    background-color: #bb67e2;
+}
+
+.info-content {
+    display: flex;
+    align-items: center;
+}
+
+.info-image {
+    width: 50%;
+    height: auto;
+}
+
+.info-text {
+    width: 50%;
+    padding-left: 20px;
+}
+
+.info h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.info p {
+    margin-bottom: 10px;
+}
+
+.additional-info {
+    display: flex;
+    align-items: center;
+    padding: 50px 0;
+    background-color: #bb67e2;
+}
+
+.additional-info-content {
+    display: flex;
+    align-items: center;
+}
+
+.additional-info-text {
+    width: 50%;
+    padding-right: 20px;
+}
+
+.additional-info-image {
+    width: 50%;
+    height: auto;
+}
+
+.extra-info {
+    display: flex;
+    align-items: center;
+    padding: 50px 0;
+    background-color: #bb67e2;
+}
+
+.extra-info-content {
+    display: flex;
+    align-items: center;
+}
+
+.extra-info-text {
+    width: 50%;
+    padding-left: 20px;
+}
+
+.extra-info-image {
+    width: 50%;
+    height: auto;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #bb67e2;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+#close-popup, #close-cart {
+    cursor: pointer;
+    color: #bb67e2;
+}
+
+#cart-items {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+#checkout-button {
+    background-color: #bb67e2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#checkout-button:hover {
+    background-color: #ff6600;
+}
